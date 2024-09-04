@@ -12,9 +12,9 @@ import wikiquote
 
 # configs for script
 
-USE_STREAMLIT = False
+USE_STREAMLIT = True
 # Set up OpenAI API key
-os.environ["OPENAI_API_KEY"] = "Your API key"
+# os.environ["OPENAI_API_KEY"] = "Your API key"
 
 # Initialize ChatOpenAI model
 model = ChatOpenAI(base_url="https://openrouter.ai/api/v1", model="meta-llama/llama-3.1-8b-instruct:free", temperature=0.75)
@@ -650,7 +650,7 @@ def format_quotes(work_name, quotes):
     return f"{work_name}:\n" + "\n".join(quotes)
 
 def generate_story(prompt, inject_popular_work_reference=True, generate_story_structure_beforehand=True, maximum_chapters=None):
-    st.header("Story") if USE_STREAMLIT else print("Story")
+    # st.header("Story") if USE_STREAMLIT else print("Story")
     log("Starting story generation process")
 
     # Get the initial story prompt from the user
