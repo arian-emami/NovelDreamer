@@ -777,7 +777,20 @@ if USE_STREAMLIT:
         """, unsafe_allow_html=True)
 
     # Streamlit UI setup
-    st.title("Story Generator")
+    st.title("NovelDreamer")
+    # Add header image and lorem ipsum paragraph
+    st.image("noveldreamer_header.png")
+    st.markdown("""NovelDreamer is an AI agent that enhances long-form storytelling with LLMs. It uses retrieval-augmented generation (RAG) with Wikiquote samples and integrates narrative frameworks like the Hero's Journey to create coherent, engaging stories. """)
+    st.warning("⚠️ **To view the internal steps of the system, please check the sidebar (expand it on mobile devices).**")
+    # Add footer with links
+    st.markdown("---")
+    st.markdown("""
+    📘 [GitHub Repository](https://github.com/arian-emami/NovelDreamer)
+    |
+    📄 [Paper Preprint (pdf)](https://raw.githubusercontent.com/arian-emami/NovelDreamer/main/NovelDreamer%20Harnessing%20LLMs%20for%20Coherent%20and%20Engaging%20Long-Form%20Storytelling.pdf)
+    """)
+
+    
     story_prompt = st.text_input("Enter your story prompt:")
     generate_button = st.button("Generate Story")
 
