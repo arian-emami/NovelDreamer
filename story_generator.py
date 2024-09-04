@@ -640,7 +640,7 @@ def log(log_text, use_streamlit=True):
     log_data += log_line
 
     if USE_STREAMLIT and use_streamlit:
-        log_area.markdown(f"\n{log_data}\n")
+        log_area.markdown(f"\n{log_data}\n\n")
     else:
         print(log_line, end='')
 
