@@ -636,7 +636,7 @@ log_data = ""
 def log(log_text, use_streamlit=True):
     global log_data
     timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
-    log_line = f"{timestamp} {log_text}\n"
+    log_line = f"{timestamp} {log_text}\n\n"
     log_data += log_line
 
     if USE_STREAMLIT and use_streamlit:
