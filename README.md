@@ -1,5 +1,8 @@
 # NovelDreamer
 NovelDreamer: Harnessing LLMs for Coherent and Engaging Long-Form Storytelling
+
+[Online demo](https://noveldreamer.streamlit.app/)
+
 ![NovelDreamer header](noveldreamer_header.png)
 
 ## Abstract
