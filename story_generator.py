@@ -17,7 +17,7 @@ USE_STREAMLIT = True
 # os.environ["OPENAI_API_KEY"] = "Your API key"
 
 # Initialize ChatOpenAI model
-model = ChatOpenAI(base_url="https://openrouter.ai/api/v1", model="meta-llama/llama-3.1-8b-instruct:free", temperature=0.75)
+model = ChatOpenAI(base_url="https://openrouter.ai/api/v1", model="meta-llama/llama-3.1-8b-instruct:free")
 
 story_structure_chooser = """
 use the handbook for choosing story structure to determine which story structure is proper for a story like this:
